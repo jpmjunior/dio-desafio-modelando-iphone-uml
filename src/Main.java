@@ -8,9 +8,7 @@ public class Main {
 
         System.out.println("INICIANDO IPHONE!");
 
-        while (true) {
-            exibirMenuPrincipal();
-        }
+        exibirMenuPrincipal();
 
     }
 
@@ -38,7 +36,7 @@ public class Main {
                 navegadorInternet.atualizarPagina();
                 break;
             default:
-                System.out.println("Opção incorreta, tente novamente.");
+                System.out.println("Opção incorreta, tente novamente.\n");
                 exibirMenuPrincipal();
         }
 
@@ -68,7 +66,7 @@ public class Main {
                 aparelhoTelefonico.iniciarCorreioVoz();
                 break;
             default:
-                System.out.println("Opção incorreta, tente novamente.");
+                System.out.println("Opção incorreta, tente novamente.\n");
                 exibirMenuPrincipal();
         }
 
@@ -98,7 +96,7 @@ public class Main {
                 reprodutorMusical.selecionarMusica();
                 break;
             default:
-                System.out.println("Opção incorreta, tente novamente.");
+                System.out.println("Opção incorreta, tente novamente.\n");
                 exibirMenuPrincipal();
         }
 
@@ -121,15 +119,19 @@ public class Main {
                 System.exit(0);
             case 1:
                 exibirMenuReprodutorMusical();
+                exibirMenuPrincipal();
                 break;
             case 2:
                 exibirMenuAparelhoTelefonico();
+                exibirMenuPrincipal();
                 break;
             case 3:
                 exibirMenuNavegadorInternet();
+                exibirMenuPrincipal();
                 break;
             default:
-                System.out.println("Opção incorreta, tente novamente.");
+                System.out.println("Opção incorreta, tente novamente.\n");
+                exibirMenuPrincipal();
         }
 
     }
